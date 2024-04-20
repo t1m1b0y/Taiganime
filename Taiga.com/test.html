@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hi</p>
+    <input type="text" placeholder="search" id="search" class="query">
+    <button id="button" class="button">click me</button>
+    <script>
+        // const search = document.querySelector('.query')
+        // const button = document.querySelector('.button')
+
+        // // const async = async() =>{
+        // //     try{
+        // //         const url = 'https://'+search.value
+        // //         const response = await fetch(url)
+        // //         // const data = await response.json()
+        // //         // console.log(data)
+
+        // //     }catch{
+        // //         console.log('nah')
+
+        // //     }
+        // // }
+
+        // async function FetchHtml() 
+        //         {
+        //             let response = await fetch('https://zoro.to');
+        //             return await response.text(); // Returns it as Promise
+        //         }
+        
+        
+        //         // Usaing the HTML
+        //         async function Do()
+        //         {
+        //            let html = await FetchHtml().then(text => {return text}); // Get html from the promise
+        //             alert(html);
+        //         }
+        
+        
+        //         // Exe
+        //         Do();
+
+        // button.addEventListener('click', async)//{
+        // //     // const url = 'https://www.google.com/search?q='+search.value
+        // //     // window.open(url, '_self')
+        // //     const url = 'https://'+search.value
+
+        // //     //window.open(url, '_self')
+
+        // // }
+
+        const list = 'Tensei Shitara Suraimu Datta Ken'
+        const splitted = list.split('')
+        console.log(splitted)
+
+        const but = document.getElementById('button')
+
+        but.addEventListener('click', function(){
+            let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+            width=0,height=0,left=-1000,top=-1000`;
+
+            
+            window.open('index.html', 'test', params)
+        })
+
+        const sucessfulLookup = (position) =>{
+            const {latitude, longitude} = position.coords;
+            fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=a881305bbf2c403d862836ac034d8ecd`)
+                .then(response => response.json())
+                .then(console.log)
+        }
+
+        navigator.geolocation.getCurrentPosition(sucessfulLookup, console.log())
+
+        const sucessfulLookupTest = (latitude, longitude) =>{
+            
+            fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=a881305bbf2c403d862836ac034d8ecd`)
+                .then(response => response.json())
+                .then(console.log)
+        }
+
+        sucessfulLookupTest(37.0902, 95.7129)
+
+        
+    </script>s
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiga!</title>
+
+    <link rel="icon" href="images/tab-icon.jpeg" type = "image/x-icon">
+    <link rel="stylesheet" href="general-styles.css">
+
+    <link rel="stylesheet" href="pirate-site-styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="header"> 
+
+
+        <div class="search-bar-div">
+            <input type="text" placeholder="Find Where To Watch Your Anime!" class="SearchBar" id="SearchBar">
+            <p class="searchBar-text">Find Where To Watch Your Anime</p>
+        </div>
+
+        
+        <div class="taiga-div">
+            <img src="images/tab-icon.jpeg" alt="" class="logo-icon">
+            <p class="taiga" id="taiga">ㄒ卂丨Ꮆ卂几丨爪乇!</p>
+        </div>
+        
+       <a href="settings.html">
+            <div class="login-div">
+                <img src="images/login.jpeg" alt="" class="login-icon">
+                <p class="Account-text">Your Settings!</p>
+            </div>
+        </a>
+        
+        
+          
+
+    </div>
+
+    <!-- <div class="sidebar">
+        <img src="images/safe-anime-icon.jpg" alt="" srcset="">
+        <img src="images/bad-site-icon.png" alt="" srcset="">
+           
+    </div> -->
+
+
+    <div class="Legal-section" id="legalSection">
+        <div class="legal-sites-intro"><p id="legal-sites-intro" class="legale-sites-intro">Lҽɠαʅ Sιƚҽʂ Tσ Wαƚƈԋ Aɳιɱҽ!</p></div>
+        <div class="legal-site-collection">
+            <a href="https://www.crunchyroll.com">
+                <div class="crunchyroll-div drop" id="crunchyroll-div" style="--order: 1">
+                    <img src="images/crunchyroll.png" alt="" srcset="" class="legal-site-icon crunchyroll" id="crunchyroll">
+                    <p class="crunchyroll-text" id="crunchyroll-text">Crunchyroll</p>
+                </div>
+            </a>
+            <a href="https://www.netflix.com/">
+                <div class="netflix-div drop" id="netflix-div" style="--order: 2">
+                    <img src="images/netflix.png" alt="" class="legal-site-icon netflix" id="netflix">
+                    <p class="netflix-text" id='netflixText'>Netflix</p>
+                </div>
+
+            </a>
+            
+            <a href="https://www.hidive.com/">
+                <div class="hidive-div drop" id="hidive-div" style="--order: 3">
+                    <img src="images/hidive.png" alt="" srcset="" class="legal-site-icon hidive" id="hidive">
+                    <p class="hidive-text" id="hidiveText">HiDive</p>
+                </div>
+
+            </a>
+           <a href="https://www.hulu.com">
+            <div class="hulu-div drop" id="hulu-div" style="--order: 4">
+                <img src="images/hulu.webp" alt="" class="legal-site-icon hulu" id="hulu" class="hulu">
+                <p class="hulu-text" id="huluText">Hulu</p>
+            </div>
+
+
+           </a>
+            
+        </div>
+    </div>
+
+    <div class="pirate-section" id="pirateSection">
+        <div class="pirate-sites-intro" id="pirate-sites-intro"> <p>Your Personal Sites!</p></div>
+        <div class="pirateSitesDiv" id="pirateSitesDiv">
+            <div class='addSection'id="addSection">
+                <img src="images/plus-sign.png" alt="" class="plus-sign" id="plusSign">
+            </div>
+            <div  class="pirateSiteIconsDiv" id="pirateSiteIconsDiv"></div>
+
+        </div>
+        
+
+        
+        <dialog id="dialogue" class="dialog">
+            <div class="dialog-closing-div" id="dialog-closing-div">
+                <div action="" class="pirate-section-form">
+                    <div class="pirate-site-input-div">
+                        <label for="fname" class="label">Name</label><br>
+                        <input type="text"  name="fname" placeholder="AnimeSite" class="pirate-site-input" id="pirateSiteInput-name"><br>
+
+                    </div>
+                    
+                    <div class="pirate-site-input-div">
+                        <label for="lname" class="label">URL</label><br>
+                        <input type="text"  name="lname" placeholder="AnimeSite.com" class="pirate-site-input" id="pirateSiteInput-link"><br><br>
+                    </div>
+                    <button id="submit-button" class="submit-button" id="submit-button">Done! </button>
+                </div>
+            </div>
+        </dialog>
+
+        
+    </div>
+    <div class="news-bar" id="news-bar">
+        <img src="images/news-practise.jpeg" alt="Error!" srcset="" class="news-wallpaper" id="news-wallpaper">
+        <div class="news-content" id="news-practise">
+            <div class="content-box" id="content-box">
+                <img src="" alt="Error!" class="news-practise" id="newsImage">
+                <p class="news-text" id="newsText"></p>
+
+            </div>
+
+            
+
+           
+            
+            
+            
+            
+        </div>
+
+    </div>
+   
+    <script  src="./scripting.js" ></script>
+    <!-- <script src="settingsCode.js"></script> -->
+    
+</body>
+
+</html>
